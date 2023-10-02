@@ -125,3 +125,67 @@ body {
     background-color:#a231b1;
     color: white; 
 }
+
+.card:hover {
+    box-shadow: 1px 1px 10px #a231b1;
+}
+
+.btn-facebook {
+    border-radius: 100px;
+    border:0px;
+    color: #fff;
+    height: 45px;
+    width: 70%;
+    background-image: linear-gradient(to right, #26D0CE  0%, #1A2980 51%, #1A2980  100%);
+    box-shadow: 1px 5px 20px rgba(26, 41, 128, 0.5); 
+}
+
+.btn-instagram {
+    border-radius: 100px;
+    border:0px;
+    color: #fff;
+    height: 45px;
+    width: 70%;
+    background-image: linear-gradient(to right, #F9D423  0%, #FF4E50 51%, #FF4E50  100%);
+    box-shadow: 5px 5px 20px rgba(255, 78, 80, 0.);
+    
+}
+
+
+
+.btn-twitter {
+    border-radius: 100px;
+    border:0px;
+    height: 45px;
+    color: #fff;
+    width: 70%;
+    background-image: linear-gradient(to right, #64b3f4  0%, #c2e59c 51%, #c2e59c  100%);
+}
+
+ 
+.btn-linkedin {
+    border-radius: 100px;
+    border:0px;
+    color: #fff;
+    height: 45px;
+    width: 70%;
+    background-image: linear-gradient(to right, #eef2f3  0%,#8e9eab 51%, #8e9eab  100%);
+} 
+
+.circle {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    left: 50%;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+
+.circle img {
+    transition: 2s ease;
+}
+.circle:hover img {
+    height: 1000px;
+}
