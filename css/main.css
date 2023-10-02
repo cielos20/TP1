@@ -74,3 +74,54 @@ body {
     background-color: #fff;
     padding: 0 10px;
 }
+
+.box {
+
+    width: 100%;
+    margin-top: 20px;
+    border: #a231b1 5px solid;
+}
+
+.skill-bar {
+    height: 10px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.per-25 {
+    height: 100%;
+    width: 25%;
+    border-radius: 5px;
+    background-color:#a231b1;
+}
+
+.per-75 {
+    height: 100%;
+    width: 75%;
+    border-radius: 5px;
+    background-color:#a231b1;
+}
+
+.per-50 {
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    background-color:#a231b1;
+}
+
+.per-35 {
+    height: 100%;
+    width: 35%;
+    border-radius: 5px;
+    background-color:#a231b1;
+}
+
+.underline {
+    text-decoration: underline #a231b1;
+}
+
+.btn-custom {
+    background-color:#a231b1;
+    color: white; 
+}
