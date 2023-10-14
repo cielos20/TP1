@@ -4,7 +4,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: #fff; /* Cor do texto dos links */
+    color: #fff;
 }
 
 .navbar-toggler:hover{
