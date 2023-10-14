@@ -3,6 +3,21 @@ body {
     overflow-x: hidden;
 }
 
+.navbar-nav .nav-link {
+    color: #fff; /* Cor do texto dos links */
+}
+
+.navbar-toggler:hover{
+    color: #a231b1 !important;
+    border-color: #a231b1 !important;
+}
+
+.dropdown-item {
+    color: #fff;
+}
+.dropdown-item:hover {
+    color: #a231b1;
+}
 .navbar-brand:hover {
     color: #a231b1 !important;
     border-color: #a231b1 !important;
@@ -12,6 +27,12 @@ body {
     color: #a231b1 !important;
 }
 
+.btn-outline-light:hover {
+    color: #a231b1;
+    border-color: #a231b1; 
+    background-color: transparent;
+}
+
 .carousel-item {
     min-height: 60vh;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
@@ -19,6 +40,7 @@ body {
 
 .carousel-item img {
     max-height: 95vh;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -27,6 +49,18 @@ body {
     transform: translateY(-50%);
     bottom: initial;
 }
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        display: block;
+        transform: translate(0%);
+        left: 0;
+    }
+    .carousel-item img {
+        width: auto;
+    }
+}
+
 
 .overlay {
     position: absolute;
@@ -187,5 +221,12 @@ body {
     transition: 2s ease;
 }
 .circle:hover img {
-    height: 1000px;
+    height: 165px;
+}
+
+.animated {
+    margin-bottom: -100px;
+    display: block;
+    z-index: 100;
+    height: 100px;
 }

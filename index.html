@@ -14,8 +14,7 @@
     <!-- Google Fonts CSS -->
     <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
     <!-- Google Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css">
@@ -23,17 +22,15 @@
 
 <body>
     <!-- Navbar -->
-    <div class="container-fluid bg-secondary">
-        <div class="row">
-            <div class="col-md-10 align-self-center">
-                <i class="fa-brands fa-facebook text-light icon"></i>
-                <i class="fa-brands fa-instagram text-light icon"></i>
-                <i class="fa-brands fa-twitter text-light icon"></i>
-                <i class="fa-brands fa-linkedin text-light icon"></i>
-            </div>
-            <div class="col-md-2">
-                <p class="text-light mt-3 text-end">All Rights Reserved</p>
-            </div>
+    <div class="container-fluid d-flex bg-secondary justify-content-between align-items-center">
+        <div>
+            <i class="fa-brands fa-facebook text-light icon"></i>
+            <i class="fa-brands fa-instagram text-light icon"></i>
+            <i class="fa-brands fa-twitter text-light icon"></i>
+            <i class="fa-brands fa-linkedin text-light icon"></i>
+        </div>
+        <div>
+            <p class="text-light text-end" style="margin: 0px">All Rights Reserved</p>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg bg-dark sticky-top">
@@ -42,25 +39,25 @@
             <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#dropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon bg-light"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="dropdown">
-                <ul class="navbar-nav mb-2 mb-lg-0">
+            <div class="navbar-collapse justify-content-center" id="dropdown">
+                <ul class="navbar-nav mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-light" aria-current="page" href="#carousel">Home</a>
+                        <a class="nav-link" aria-current="page" href="#carousel">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#my-skills">Skills</a>
+                        <a class="nav-link" href="#my-skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#about-us">About</a>
+                        <a class="nav-link" href="#about-us">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
                         <ul class="dropdown-menu bg-dark">
                             <li>
-                                <a class="dropdown-item bg-dark text-light" href="#multi-applications">Multimedia Applications</a>
+                                <a class="dropdown-item bg-dark" href="#multi-applications">Multimedia Applications</a>
                             </li>
                             <li>
-                                <a class="dropdown-item bg-dark text-light" href="#inf-retrieval">Information Retrieval</a>
+                                <a class="dropdown-item bg-dark" href="#inf-retrieval">Information Retrieval</a>
                             </li>
                         </ul>
                     </li>
@@ -72,7 +69,7 @@
         </div>
     </nav>
     <!-- Carousel --> 
-    <div id="carousel" class="carousel slide" data-bs-ride="false">
+    <div class="carousel slide" id="carousel" data-bs-ride="false">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -81,8 +78,10 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="overlay"></div>
-                <img src="img/banner-1.jpeg" class="d-block w-100" alt="Slide 1">
-                <div class="carousel-caption d-none d-md-block">
+                <picture>
+                    <img src="img/banner-1.jpeg" alt="Slide 1">
+                </picture>
+                <div class="carousel-caption">
                     <a class="btn btn-lg btn-outline-light">
                         <span>My Work</span>
                     </a>
@@ -90,8 +89,10 @@
             </div>
             <div class="carousel-item">
                 <div class="overlay"></div>
-                <img src="img/banner-2.jpeg" class="d-block w-100" alt="Slide 2">
-                <div class="carousel-caption d-none d-md-block">
+                <picture>
+                    <img src="img/banner-2.jpeg" alt="Slide 2">
+                </picture>
+                <div class="carousel-caption">
                     <a class="btn btn-lg btn-outline-light">
                         <span>My Work</span>
                     </a>
@@ -99,8 +100,10 @@
             </div>
             <div class="carousel-item">
                 <div class="overlay"></div>
-                <img src="img/banner-3.jpeg" class="d-block w-100" alt="Slide 3">
-                <div class="carousel-caption d-none d-md-block">
+                <picture>
+                   <img src="img/banner-3.jpeg" alt="Slide 3"> 
+                </picture>
+                <div class="carousel-caption">
                     <a class="btn btn-lg btn-outline-light">
                         <span>My Work</span>
                     </a>
@@ -117,71 +120,77 @@
         </button>
     </div>
     <!-- Our skills -->
-    <div class="container-fluid mb-5" id="my-skills">
-        <h3 class="text-center">My Skills</h3>
+    <div class="container-fluid py-5" id="my-skills">
+        <h3 class="text-center">Our Skills</h3>
         <h5 class="text-center text-muted">Multimedia and Machine Learning</h5>
         <div class="line">
-            <div class="line-icon">
+            <div class="line-icon g-">
                 <i class="fa fa-star"></i>
             </div>
         </div>
-        <div class="row g-5">
-            <div class="col-md-6 d-flex">
-                <div class="bg-dark rect p-1">
-                    <i class="fa-brands fa-html5 skill-icon text-light mt-5"></i>
+        <div class="row g-5 mt-4">
+            <div class="col-md-6 col-12 row">
+                <div class="col-md-6 col-6 d-flex">
+                    <div class="bg-dark rect p-1">
+                        <i class="fa-brands fa-html5 skill-icon text-light mt-5"></i>
+                    </div>
+                    <div class="bg-dark rect">
+                        <div class="diagonal"></div>
+                    </div>
                 </div>
-                <div class="bg-dark rect">
-                    <div class="diagonal"></div>
-                </div>
-                <div class="ms-1 z-1">
-                    <p>Hello World!</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, deserunt.</p>
-                </div>
-            </div>
-            <div class="col-md-6 d-flex">
-                <div class="bg-dark rect p-1">
-                    <i class="fa-brands fa-css3 skill-icon text-light mt-5"></i>
-                </div>
-                <div class="bg-dark rect">
-                    <div class="diagonal"></div>
-                </div>
-                <div class="ms-1 z-1">
-                    <p>Hello World!</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, deserunt.</p>
+                <div class="col-md-6 col-6 z-1">
+                    <h3>WEB</h3>
+                    <p>HTML, CSS and JavaScript are the main skills related to front-end development. Angular, Boostrap, Node.js and Ionic are the main framewroks used.</p>
                 </div>
             </div>
-            <div class="col-md-6 d-flex">
-                <div class="bg-dark rect p-1">
-                    <i class="fa-brands fa-square-js skill-icon text-light mt-5"></i>
+            <div class="col-md-6 col-12 row">
+                <div class="col-md-6 col-6 d-flex">
+                    <div class="bg-dark rect px-3">
+                        <i class="fa-brands fa-css3 skill-icon text-light mt-5"></i>
+                    </div>
+                    <div class="bg-dark rect">
+                        <div class="diagonal"></div>
+                    </div>
                 </div>
-                <div class="bg-dark rect">
-                    <div class="diagonal"></div>
-                </div>
-                <div class="ms-1 z-1">
-                    <p>Hello World!</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, deserunt.</p>
+                <div class="col-md-6 col-6 z-1">
+                    <h3>MOBILE</h3>
+                    <p>Developing of mobile applications using native development enviroments and hybrid mobile frameworks for multiplatform design are the main skills.</p>
                 </div>
             </div>
-            <div class="col-md-6 d-flex">
-                <div class="bg-dark rect p-1">
-                    <i class="fa-brands fa-php skill-icon text-light mt-5"></i>
+        </div>
+        <div class="row g-5 mt-4">
+            <div class="col-md-6 col-12 row">
+                <div class="col-md-6 col-6 d-flex">
+                    <div class="bg-dark rect p-1">
+                        <i class="fa-brands fa-square-js skill-icon text-light mt-5"></i>
+                    </div>
+                    <div class="bg-dark rect">
+                        <div class="diagonal"></div>
+                    </div>
                 </div>
-                <div class="bg-dark rect">
-                    <div class="diagonal"></div>
+                <div class="col-md-6 col-6 z-1">
+                    <h3>MULTIMEDIA</h3>
+                    <p>From captured media signals to multimedia authoring, including audio, image and video editing and processing and 3D computation are the core competencies.</p>
                 </div>
-                <div class="ms-1 z-1">
-                    <p>Hello World!</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, deserunt.</p>
+            </div>
+            <div class="col-md-6 col-12 row">
+                <div class="col-md-6 col-6 d-flex">
+                    <div class="bg-dark rect px-3">
+                        <i class="fa-brands fa-php skill-icon text-light mt-5"></i>
+                    </div>
+                    <div class="bg-dark rect">
+                        <div class="diagonal"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-6 z-1">
+                    <h3>M. LEARNING</h3>
+                    <p>Machine Learning algorithms applied to multimedia information retrieval are the main skills related to this topic. Including the latest Deep Learning methods.</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- About us -->
-    <div class="container-fluid mb-5" id="about-us">
+    <div class="container-fluid py-5 mb-5" id="about-us">
         <h3 class="text-center">About us</h3>
         <h5 class="text-center text-muted">We code and design...</h5>
         <h5 class="text-center text-muted">...eat and coffee!</h5>
@@ -241,52 +250,53 @@
         </div>
         <div class="row py-5" id="multi-applications">
             <h3 class="underline mt-5 text-center">Multimedia Applications</h3>
-            <div class="d-flex gap-3 px-5 py-2">
-                <div class="card">
+            <div class="d-flex row gap-3 px-3 py-2 justify-content-center">
+                <div class="card col-md-3 col-12">
+                    <i class="fa-solid fa-magnifying-glass animated"></i>
                     <img src="img/img1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-title">RtMoCap</p>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolores nesciunt blanditiis.</p>
+                        <p class="card-text">Real Time body motion capture and tracking using a Microsoft Xbox Kinect sensor.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card col-md-3 col-12">
                     <img src="img/img3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-title">RtMoCap</p>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolores nesciunt blanditiis.</p>
+                        <p class="card-text">Colaborative Application to play a 3D game using moviments of a real person in a open space.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card col-md-3 col-12">
                     <img src="img/img4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-title">RtMoCap</p>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolores nesciunt blanditiis.</p>
+                        <p class="card-text">A computer game to annotate images with keywords using a gesture interface.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row py-5" id="inf-retrieval">
             <h3 class="underline mt-5 text-center">Information Retrieval</h3>
-            <div class="d-flex gap-3 px-5 py-2">
-                <div class="card">
+            <div class="d-flex row gap-3 px-3 py-2 justify-content-center">
+                <div class="card col-md-3 col-12">
                     <img src="img/img1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-title">RtMoCap</p>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolores nesciunt blanditiis.</p>
+                        <p class="card-text">Real Time body motion capture and tracking using a Microsoft Xbox Kinect sensor.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card col-md-3 col-12">
                     <img src="img/img3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-title">RtMoCap</p>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolores nesciunt blanditiis.</p>
+                        <p class="card-text">Colaborative Application to play a 3D game using moviments of a real person in a open space.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card col-md-3 col-12">
                     <img src="img/img4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-title">RtMoCap</p>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolores nesciunt blanditiis.</p>
+                        <p class="card-text">A computer game to annotate images with keywords using a gesture interface.</p>
                     </div>
                 </div>
             </div>
@@ -303,7 +313,7 @@
         <div class="row"> 
             <div class="col-md-6">
                 <div class="circle">
-                    <img src="img/video-filler.jpeg" alt="">
+                    <img src="img/ICON.JPEG" alt="">
                 </div>
                 <div class="">
                     <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -318,7 +328,7 @@
                 </div>
             </div>
     
-            <div class="col-md-6 px-5">
+            <div class="col-md-6 px-5 mt-5 text-center">
                 <button class="btn-facebook mt-3">
                     <i class="fa-brands fa-facebook text-light icon"></i>
                 </button>
@@ -335,14 +345,14 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer class="bg-dark container-fluid row py-2">
-        <div class="align-content-start col-md-10">
+    <footer class="container-fluid d-flex bg-dark justify-content-between align-items-center">
+        <div>
             <i class="fa-brands fa-facebook text-light icon"></i>
             <i class="fa-brands fa-instagram text-light icon"></i>
             <i class="fa-brands fa-twitter text-light icon"></i>
             <i class="fa-brands fa-linkedin text-light icon"></i>
         </div>
-        <div class="col-md-2">
+        <div>
             <p class="text-light"> ©2023 Copyright: Rodrigo & Tatiana </p>
         </div>
     </footer>
