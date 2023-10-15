@@ -1,55 +1,64 @@
+ /*  Body  */
 body {
     font-family: 'Kalam', cursive;
     overflow-x: hidden;
 }
 
-.navbar-nav .nav-link {
-    color: #fff;
+ /*  Geral  */
+.line {
+    position: relative;
+    height: 1px;
+    width: 20%;
+    background-color: #a231b1;
+    margin: 20px auto;
+}
+.line-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 0 10px;
+}
+.underline {
+    text-decoration: underline #a231b1;
+}
+.btn-custom {
+    background-color: transparent; 
+    transition: transform 0.3s ease;
+}
+.btn-custom:hover {
+    transform: scale(1.1); 
 }
 
-.navbar-toggler:hover{
+ /*  Navbar  */
+.navbar-nav .nav-link, .dropdown-item {
+    color: #fff; 
+}
+.navbar-toggler:hover, .navbar-brand:hover, .btn-outline-light:hover{
     color: #a231b1 !important;
     border-color: #a231b1 !important;
-}
-
-.dropdown-item {
-    color: #fff;
-}
-.dropdown-item:hover {
-    color: #a231b1;
-}
-.navbar-brand:hover {
-    color: #a231b1 !important;
-    border-color: #a231b1 !important;
-}
-
-.nav-link:hover, .icon:hover {
-    color: #a231b1 !important;
-}
-
-.btn-outline-light:hover {
-    color: #a231b1;
-    border-color: #a231b1; 
     background-color: transparent;
 }
+.nav-link:hover, .icon:hover, .dropdown-item:hover {
+    color: #a231b1 !important;
+}
 
+ /*  Carousel  */
 .carousel-item {
     min-height: 60vh;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
 }
-
 .carousel-item img {
     max-height: 95vh;
     width: 100%;
     object-fit: cover;
 }
-
 .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
 }
-
 @media (max-width: 768px) {
     .carousel-caption {
         display: block;
@@ -60,8 +69,6 @@ body {
         width: auto;
     }
 }
-
-
 .overlay {
     position: absolute;
     top: 0;
@@ -71,98 +78,134 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+ /*  Our skills  */
+ #my-skills {
+    padding-top: 80px; 
+ }
 .rect {
     position: relative;
     width: 150px;
     height: 200px;
 }
-
 .diagonal {
     position: absolute;
     top: 0;
     left: 60px;
-    width: 120%;
+    width: 150%;
     height: 100%;
     background-color: white;
     transform: skew(35deg);
 }
-
 .skill-icon {
     height: 100px;
     width: 100px;
 }
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.skill-category {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.skill-info {
+    flex: 1;
+    position: relative; 
+    z-index: 2; 
+}
+@media (max-width: 992px) {
+    .skills-row {
+        flex-direction: column; 
+        text-align: left; 
+    }
 
-.line {
-    position: relative;
-    height: 1px;
-    width: 20%;
-    background-color: #a231b1;
-    margin: 20px auto;
+    .skill-category {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
 }
 
-.line-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 0 10px;
-}
-
+/*  About us  >*/
 .box {
-
     width: 100%;
     margin-top: 20px;
     border: #a231b1 5px solid;
 }
-
 .skill-bar {
     height: 10px;
     width: 100%;
     background-color: #333;
     border-radius: 5px;
 }
-
 .per-25 {
     height: 100%;
     width: 25%;
     border-radius: 5px;
     background-color:#a231b1;
 }
-
 .per-75 {
     height: 100%;
     width: 75%;
     border-radius: 5px;
     background-color:#a231b1;
 }
-
 .per-50 {
     height: 100%;
     width: 50%;
     border-radius: 5px;
     background-color:#a231b1;
 }
-
 .per-35 {
     height: 100%;
     width: 35%;
     border-radius: 5px;
     background-color:#a231b1;
 }
-
-.underline {
-    text-decoration: underline #a231b1;
+.resumes{
+    margin-top: 100px;
 }
 
-.btn-custom {
-    background-color:#a231b1;
-    color: white; 
+/* About us */
+ .card {
+    position: relative;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
-
+.card .card-img-wrapper {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+.card .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .fa-magnifying-glass {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #a231b1;
+    display: none;
+}
 .card:hover {
     box-shadow: 1px 1px 10px #a231b1;
+    background-color: rgba(247, 180, 247, 0.606);
 }
+.card:hover .fa-magnifying-glass {
+    display: block;
+}
+
+/* Contact us */
 
 .btn-facebook {
     border-radius: 100px;
@@ -170,10 +213,9 @@ body {
     color: #fff;
     height: 45px;
     width: 70%;
-    background-image: linear-gradient(to right, #26D0CE  0%, #1A2980 51%, #1A2980  100%);
-    box-shadow: 1px 5px 20px rgba(26, 41, 128, 0.5); 
+    background-image: linear-gradient(to right, #2692d0d8  0%, #1a3380 51%, #1A2980  100%);
+    box-shadow: 1px 5px 20px rgba(73, 96, 228, 0.5); 
 }
-
 .btn-instagram {
     border-radius: 100px;
     border:0px;
@@ -181,12 +223,9 @@ body {
     height: 45px;
     width: 70%;
     background-image: linear-gradient(to right, #F9D423  0%, #FF4E50 51%, #FF4E50  100%);
-    box-shadow: 5px 5px 20px rgba(255, 78, 80, 0.);
+    box-shadow: 1px 5px 20px rgba(231, 106, 11, 0.5); 
     
 }
-
-
-
 .btn-twitter {
     border-radius: 100px;
     border:0px;
@@ -194,9 +233,8 @@ body {
     color: #fff;
     width: 70%;
     background-image: linear-gradient(to right, #64b3f4  0%, #c2e59c 51%, #c2e59c  100%);
+    box-shadow: 1px 5px 20px rgba(7, 132, 82, 0.5); 
 }
-
- 
 .btn-linkedin {
     border-radius: 100px;
     border:0px;
@@ -204,26 +242,24 @@ body {
     height: 45px;
     width: 70%;
     background-image: linear-gradient(to right, #eef2f3  0%,#8e9eab 51%, #8e9eab  100%);
+    box-shadow: 1px 5px 20px rgba(54, 53, 53, 0.5); 
 } 
-
 .circle {
     border-radius: 100%;
     width: 150px;
     height: 150px;
     background-color: #333;
     left: 50%;
-    display: block;
     margin: auto;
     overflow: hidden;
 }
-
 .circle img {
+    height: 155px;
     transition: 2s ease;
 }
 .circle:hover img {
     height: 165px;
 }
-
 .animated {
     margin-bottom: -100px;
     display: block;
